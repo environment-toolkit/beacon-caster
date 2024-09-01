@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "properties": {
+    "ETSpecFormatVersion": {
+      "enum": ["2024-09-01"],
+      "type": "string"
+    },
+    "Resources": {
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-zA-Z0-9]+$": {
+          "anyOf": []
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../base.schema.json
+Resources:
+  SiteBucket:
+    Type: "@envtio/base.aws.staticsite.Bucket"
+    Properties:
+      namePrefix: "hello-world"
+      path: "./website"
+      websiteConfig:
+        enabled: true
+      public: true # no cdn
+      registerOutputs: true
+      outputName: "website"
